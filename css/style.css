@@ -34,6 +34,7 @@ header p{
 
 main{
     padding-top: 80px;
+    padding-bottom: 100px;
     background-color: black;
     font-size: small;
     flex-wrap: wrap;
@@ -48,6 +49,7 @@ main{
 
 .box img{
     width: 100%;
+    transition: all 3s ease;
 }
 
 .box p{
@@ -59,6 +61,15 @@ main{
     left: 0;
 }
 
+.box:hover p i{
+    color: red;
+}
+
+.img:hover{
+    transform: scale(1.2, 1.2);
+    filter: grayscale(50%);
+}
+
 /* footer */
 
 footer{
@@ -68,6 +79,8 @@ footer{
     color: white;
     font-size: x-small;
     position: fixed;
+    bottom: 0;
+    left: 0;
     z-index: 1000;
 }
 
@@ -95,6 +108,27 @@ footer{
 .align i{
     font-size: x-large;
     margin-bottom: 5px;
+}
+
+.mic{
+    width: 50px;
+}
+
+.align .fa-microphone-slash, .fa-video-slash{
+    display: none
+}
+
+.mic:hover .fa-microphone-slash, .video:hover .fa-video-slash{
+    display: inline;
+    color: red;
+}
+
+.mic:hover .fa-microphone, .video:hover .fa-video{
+    display: none;
+}
+
+.mic:hover p, .video:hover p{
+    margin-top: 5px;
 }
 
 .diff:hover i{
