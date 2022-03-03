@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    background-color: black;
+}
+
 .flex{
     display: flex;
 }
@@ -43,8 +47,10 @@ main{
 }
 
 .box{
-    width: 15%;
+    width: calc(100% / 8);
     position: relative;
+    cursor: pointer;
+    transition: all 3s ease;
 }
 
 .box img{
@@ -65,7 +71,7 @@ main{
     color: red;
 }
 
-.img:hover{
+.box:hover .img{
     transform: scale(1.2, 1.2);
     filter: grayscale(50%);
 }
@@ -103,6 +109,7 @@ footer{
 
 .align{
     text-align: center;
+    cursor: pointer;
 }
 
 .align i{
@@ -137,6 +144,7 @@ footer{
 
 .right{
     background-color: hsl(0deg 0% 29%);
+    cursor: pointer;
 }
 
 .right p{
@@ -144,6 +152,10 @@ footer{
     line-height: 80px;
     text-align: center;
     color: red;
+}
+
+.right:hover p{
+    text-decoration: underline;
 }
 
 
