@@ -91,9 +91,16 @@ footer{
 }
 
 .right, .left{
-    width: 15%;
     align-items: center;
     gap: 20px;
+}
+
+.left{
+    width: 20%;
+}
+
+.right{
+    width: 10%;
 }
 
 .center{
